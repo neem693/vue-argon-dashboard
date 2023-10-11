@@ -7,6 +7,10 @@ import RTL from "../views/Rtl.vue";
 import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
+import Test from "../views/Test.vue"
+import TemplateTest from "../views/TemplateTest.vue"
+import TestEmit from "../views/TestEmit.vue"
+import TestDefineAsyc from "../views/TestDefineAsyc.vue"
 
 const routes = [
   {
@@ -53,6 +57,25 @@ const routes = [
     path: "/signup",
     name: "Signup",
     component: Signup,
+  },
+  {
+    path: "/test",
+    name: "Test",
+    component: Test,
+  }, {
+    path: "/template-test",
+    name: "TemplateTest",
+    component: TemplateTest,
+  },
+  {
+    path: "/test-emit",
+    name: "testEmit",
+    component: TestEmit,
+  },
+  {
+    path: "/test-async-define",
+    name: "test-async-define-component",
+    component: TestDefineAsyc,
   },
   
 ];
