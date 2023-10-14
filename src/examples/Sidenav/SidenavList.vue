@@ -56,6 +56,13 @@
           </template>
         </sidenav-item>
       </li>
+      <li class="nav-item">
+        <sidenav-item url="/test-props" :class="getRoute() === 'test-props' ? 'active' : ''" navText="testProps">
+          <template v-slot:icon>
+            <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
       <!-- //////////////////////////////////////////////// -->
       <li class="nav-item">
         <sidenav-item url="/virtual-reality" :class="getRoute() === 'virtual-reality' ? 'active' : ''" :navText="this.$store.state.isRTL ? 'الواقع الافتراضي' : 'Virtual Reality'

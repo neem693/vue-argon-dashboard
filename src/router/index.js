@@ -11,6 +11,7 @@ import Test from "../views/Test.vue"
 import TemplateTest from "../views/TemplateTest.vue"
 import TestEmit from "../views/TestEmit.vue"
 import TestDefineAsyc from "../views/TestDefineAsyc.vue"
+import TestProps from "../views/TestProps"
 
 const routes = [
   {
@@ -77,7 +78,11 @@ const routes = [
     name: "test-async-define-component",
     component: TestDefineAsyc,
   },
-  
+  {
+    path: "/test-props",
+    name: "test-props",
+    component: TestProps,
+  },
 ];
 
 const router = createRouter({
